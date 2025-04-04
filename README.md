@@ -1,8 +1,8 @@
 This repo is to let people easily start using mmdetection library.
 
-# Attempt at solving issues online: 
+# Attempts at solving issues online: 
 
-- [x] https://github.com/open-mmlab/mmdetection/issues/10378 [Solve]()
+1. https://github.com/open-mmlab/mmdetection/issues/10378 [[SOLVE]](./solves/1.py)
 
 # Important todo's
 
