@@ -408,12 +408,11 @@ config=f'./configs/dummy/mask-rcnn_r50-caffe_fpn_ms-poly-3x_dummy.py'
 with open(config, 'w') as f:
     f.write(cfg.pretty_text)
 ```
+Exit the dir `cd ../../`
 
-Then run `SELF_mask-rcnn_r50-caffe_fpn_ms-poly-3x_dummy.py`
+Then run `python SELF_mask-rcnn_r50-caffe_fpn_ms-poly-3x_dummy.py`
 
 This should create `./configs/dummy/mask-rcnn_r50-caffe_fpn_ms-poly-3x_dummy.py`
-
-Exit the dir `cd ../../`
 
 ## Train
 Run: `python tools/train.py configs/dummy/mask-rcnn_r50-caffe_fpn_ms-poly-3x_dummy.py`
