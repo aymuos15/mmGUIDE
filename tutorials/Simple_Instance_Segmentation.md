@@ -1,37 +1,11 @@
-# This is an introduction to using the [mmdetection library](https://github.com/open-mmlab/mmdetection).
+# This is an simple tutorial to perform instance segmentation.
 
 Our example will involve instance segmentation. We will be covering
 
-- Installation
 - Making your own toy dataset.
 - Building your config.
 - Training.
 - Testing.
-
-I will not explain why I am doing anything, this is more of a check to see if all your installs are working. I haven't obviously performed this exhaustively, but it should work for the configs I have discussed below.
-
-## Installation: [[Reference]](https://mmdetection.readthedocs.io/en/latest/get_started.html)
-
-```bash
-conda create --name openmmlab python=3.8 -y
-conda activate openmmlab
-conda install pytorch torchvision -c pytorch #! Do not know how long this will last as Torch does not support conda anymore.
-pip install -U openmim
-mim install mmengine
-mim install "mmcv>=2.0.0"
-git clone https://github.com/open-mmlab/mmdetection.git
-cd mmdetection
-pip install -v -e .
-```
-
-Warning: This can be extremely tricky and I honestly got lucky. Try debugging and matching versions as you go if you face errors. Pasting errors to an LLM is a nice hacky way to mostly get the right versioning. 
-
-### To verify
-
-```
-mim download mmdet --config rtmdet_tiny_8xb32-300e_coco --dest .
-python demo/image_demo.py demo/demo.jpg rtmdet_tiny_8xb32-300e_coco.py --weights rtmdet_tiny_8xb32-300e_coco_20220902_112414-78e30dcc.pth --device cpu
-```
 
 ## Build a custom dataset. [[Reference]](https://mmdetection.readthedocs.io/en/latest/user_guides/dataset_prepare.html)
 
@@ -495,8 +469,8 @@ Hope this helped :)
 
 # Sample Bad Ouput
 
-![alt text](./assets/bad_output.jpg)
+![alt text](../assets/bad_output.jpg)
 
 # Sample Good Output
 
-![alt text](./assets/bad_output.jpg)
+![alt text](../assets/good_output.jpg)
